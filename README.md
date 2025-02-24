@@ -45,7 +45,7 @@ To compile the slides, ensure you have LaTeX with Beamer installed. You will nee
     - Gene expression / Transcriptomics (RNA-seq, CAGE-seq)
     - Gene regulation / Epigenetics (DNA-Methylation, Histone modifications)
     - Gene alterations (Hereditary diseases, cancer biology)
-    - Genome assemblies of other species (biodiversity)
+    - Infectious Disease Monitoring
     - Metagenomics and environmental DNA
     - Pathogen surveillance (antibiotic resistance, epidemics)
     - Ancient genomes

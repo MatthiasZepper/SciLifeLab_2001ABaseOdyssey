@@ -372,7 +372,7 @@
 					\item Barcodes for sample multiplexing
 					\item Unique Molecular Identifiers tag individual DNA fragments
 				\end{itemize}
-			   \item Pooling of samples
+				\item Pooling of samples
 			\end{itemize}
 	\end{columns}
 \creditdarkleft{Figure by Anja Mezger}
@@ -435,7 +435,7 @@
 \begin{frame}{\textit{Flow cells} instead of plates: Massive parallel sequencing}
 	\begin{columns}[T]
 		\column{\dimexpr\paperwidth-10pt}
-	   \begin{figure}
+	\begin{figure}
 		\includegraphics[width=0.24\textwidth]{./figures/flow_cell_1.jpg}
 		\includegraphics[width=0.24\textwidth]{./figures/flow_cell_2.jpg}
 		\includegraphics[width=0.24\textwidth]{./figures/flow_cell_3.jpg}
@@ -523,15 +523,15 @@
 	\vspace{1em}
 	\hrulefill
 	\vspace{1em}
-	\begin{columns}[T]
-		\column{\dimexpr\paperwidth-10pt}
-	\begin{lstlisting}
-		@M00463:56:000000000-AD76D:1:1101:15189:1873 1:N:0:1
-		ATAAACACGGTCTTTTTCCAGGTCAAGCCGGACGGTACCGCCCTGTGGCCATCGAA
-		+
-		-86<<F9FB7FFFGGGGGGFACGFFDEFGGGEFE>FGGGDGFGGFGGCFG?FF7E@
-	\end{lstlisting}
- \end{columns}
+\begin{columns}[T]
+	\column{\dimexpr\paperwidth-10pt}
+		\begin{lstlisting}
+			@M00463:56:000000000-AD76D:1:1101:15189:1873 1:N:0:1
+			ATAAACACGGTCTTTTTCCAGGTCAAGCCGGACGGTACCGCCCTGTGGCCATCGAA
+			+
+			-86<<F9FB7FFFGGGGGGFACGFFDEFGGGEFE>FGGGDGFGGFGGCFG?FF7E@
+		\end{lstlisting}
+\end{columns}
 \end{frame}
 
 \begin{frame}{Quality control: Good data}
@@ -552,7 +552,7 @@
 
 \begin{frame}{Common bioinformatic analyses}
 	\begin{columns}[T]
-	   \column{0.5\textwidth}
+	\column{0.5\textwidth}
 		\begin{figure}
 			\includegraphics[width=\textwidth]{figures/phixgen.png}
 		\end{figure}
@@ -590,7 +590,7 @@
 
 \begin{frame}{Analyses as if we are back today}
 	\begin{columns}[T]
-	  \column{0.35\textwidth}
+	\column{0.35\textwidth}
 		\begin{figure}
 			\includegraphics[width=\textwidth]{figures/sarek_workflow.png}
 		\end{figure}
@@ -668,8 +668,8 @@
 \end{frame}
 
 \begin{frame}[standout]{}
-	\includegraphics[width=0.6\textwidth]{./figures/onedoesnotsimplyB2.jpg} \par
-	\feature{Sequencing application:} Combination of a library preparation method and a suitable sequencing technology 
+	\includegraphics[width=0.6\textwidth]{./figures/onedoesnotsimplyB2.jpg} \par \vspace{1cm} \par
+	{\normalsize \feature{Sequencing application:} Combination of a library preparation method and a suitable sequencing technology}
 \end{frame}
 
 % % % % % % % % % % % % % % % % % % % % % % % 
@@ -706,7 +706,7 @@
 				\scriptsize $\leftarrow$ Two HLH-motifs (grey) of the  helix-loop-helix-transcription factor MyoD are bound to DNA.\end{flushleft}}
 	\end{minipage}%
 	\credit{\begin{flushleft}
-			http://www.ebi.ac.uk/pdbe-srv/view/entry/1mdy/summary \linebreak Rendering with \href{http://www.cgl.ucsf.edu/chimera/ }{UCSF Chimera} \end{flushleft}}
+			\url{https://www.ebi.ac.uk/pdbe/entry/pdb/1mdy} \linebreak Rendering with \href{http://www.cgl.ucsf.edu/chimera}{UCSF Chimera} \end{flushleft}}
 \end{frame}
 
 \begin{frame}{ChIP-seq: \underline{Ch}romatin \underline{I}mmuno\underline{p}recipitation \underline{Seq}uencing}
@@ -764,7 +764,7 @@
 		\item Subtract signals from negative control (IgG-control)
 		\item Peak detection and assignment to genes
 	\end{enumerate}
-	\credit{Screenshot \href{ http://www.broadinstitute.org/igv/}{Integrative Genomics Viewer (IGV)}}
+	\credit{Screenshot \href{https://igv.org/doc/desktop/}{Integrative Genomics Viewer (IGV)}}
 \end{frame}
 
 \begin{frame}{Peaks of different applications: Histone ChIP-seq, RNA-seq,  CAGE-seq}
@@ -779,10 +779,10 @@
 		\includegraphics[width=0.9\textwidth]{./figures/EncodeNatureGraphic.png}
 	\end{center}
     \begin{itemize}
-    	\item \href{http://www.nature.com/encode/threads}{ENCODE Project: ENCyclopedia Of DNA Elements}
+    	\item \href{https://www.encodeproject.org}{ENCODE Project: ENCyclopedia Of DNA Elements}
     	\item \href{http://www.cell.com/consortium/IHEC}{Int. Human Epigenome Consortium}
     \end{itemize}
-	\credit{Fig.: Darryl Leja (NHGRI), Ian Dunham (EBI), \url{http://encodeproject.org/ENCODE/aboutScaleup.html}}
+	\credit{Fig.: Darryl Leja (NHGRI), Ian Dunham (EBI)}
 \end{frame}
 
 \begin{frame}{Most methods now on single-cell level}
@@ -808,7 +808,7 @@
 		\includegraphics[width=\textwidth]{./figures/hca.png} \\
 	\end{center}
 	\url{https://www.humancellatlas.org}
-	\credit{Wang et al., Jul 2018, Science 361(6400)}
+	\credit{\citeme{Wang2018}, Science 361(6400)}
 \end{frame}
 
 \begin{frame}{SciLifeLab is one of the birthplaces of spatial transcriptomics}
@@ -837,7 +837,7 @@
 			\end{center}
 		\end{column}
 	\end{columns}
-	\url{http://cancergenome.nih.gov} \hfill \url{http://www.cbioportal.org} 
+	\href{https://www.cancer.gov/ccg/research/genome-sequencing/tcga}{http://cancergenome.nih.gov} \hfill \url{http://www.cbioportal.org} 
 \end{frame}
 
 % % % % % % % % % % % % % % % % % % % % % % % 
@@ -926,7 +926,7 @@
 			\includegraphics[width=0.9\textwidth]{./figures/tagesschau-nessie.png}\par
 		\end{center}
 	\end{columns}
-	\url{http://gemmell-lab.otago.ac.nz}
+	\url{https://gemmell-lab.otago.ac.nz}
 \end{frame}
 
 \begin{frame}{What is on and within us: Human Microbiome Project}
@@ -953,8 +953,8 @@
 			\end{center}
 		\end{column}
 	\end{columns}
-	\credit{Kostic et al. 2015, Cell Host \& Microbe 17, 260–273 \\
-		Davis-Richardson et al. 2014, Frontiers in Microbiology 5, 678}
+	\credit{\citeme{Kostic2015}, Cell Host \& Microbe 17, 260–273 \\
+	\citeme{DavisRichardson2014}, Frontiers in Microbiology 5, 678}}
 \end{frame}
 
 \begin{frame}{Our gut microbiome is associated with...}
@@ -976,10 +976,10 @@
 		\end{column}
 	\end{columns}
 	\credit{
-		Yu et al. 2017, Cell 170, 548–563 \\
-		Zheng et al., 2016, Mol Psychiatry. 21(6):786-96 \\
-		%Berer et al. 2014, Nature 479, 538-542
-		Jackson et al. 2018 Nature Communications 9:2655}
+		\citeme{Yu2017}, Cell 170, 548–563 \\
+		\citeme{Zheng2016}, Mol Psychiatry. 21(6):786-96 \\
+		\citeme{Berer2011}, Nature 479, 538-542 \\
+		\citeme{Jackson2018}, Nature Communications 9:2655}
 \end{frame}
 
 % % % % % % % % % % % % % % % % % % % % % % % 
