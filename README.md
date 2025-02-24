@@ -1,3 +1,5 @@
+![SciLifeLab Sweden](additional_graphics/scilifelab-repoheader.svg)
+
 # 2001: A Base Odyssey
 ***The era of genomics and massive parallel sequencing***
 
@@ -26,18 +28,29 @@ To compile the slides, ensure you have LaTeX with Beamer installed. You will nee
 
 ## Summary of Presentation Content
 
-1. **2001: Draft assemblies of the human genome are published**: Discusses the publication of the draft sequence of the human genome by Celera and the International Human Genome Sequencing Consortium.
-2. **The overture to the genomic era**: Highlights the significance of the genomic era with a reference to Stanley Kubrick's "2001: A Space Odyssey."
-3. **1968: Nobel prize for the interpretation of the genetic code**: Covers the Nobel prize awarded for the interpretation of the genetic code.
-4. **Encoded information of naturally occurring DNA unknown**: Discusses the challenges of sequencing DNA in the early 1970s.
-5. **1977: Chain-termination sequencing by Frederick Sanger**: Explains the development of the chain-termination sequencing method by Frederick Sanger.
-6. **1980: Nobel prize for DNA sequencing**: Highlights the Nobel prize awarded for DNA sequencing.
-7. **Advanced Sanger sequencing for the Human Genome Project**: Describes the advancements in Sanger sequencing used in the Human Genome Project.
-8. **Next-generation sequencing**: Introduces new high-throughput sequencing methods developed around 2010.
-9. **National Genomics Infrastructure Sweden**: Provides an overview of the National Genomics Infrastructure Sweden and its mission.
-10. **Sequencing platforms**: Discusses various sequencing platforms and technologies used since Sanger sequencing.
-11. **Sequencing data handling**: Covers the handling and quality control of sequencing data.
-12. **Sequencing applications**: Explores various applications of sequencing in characterizing genetic (mal)function, exploring the environment, and elucidating evolutionary processes.
+1. **2001: Draft assemblies of the human genome are published**: Discusses the publication of the draft sequence of the human genome. With a reference to Stanley Kubrick's "2001: A Space Odyssey.", this can be considered as **the overture to the genomic era**. Jumping back to the production year of the film, the **1968: Nobel prize for the interpretation of the genetic code** is mentioned.
+2. At that time **encoded information of naturally occurring DNA was unknown**. Discusses the challenges of sequencing DNA in the early 1970s and explains the development of the **chain-termination sequencing method** by Frederick Sanger.
+3. Coming full circle, **advanced Sanger sequencing for the Human Genome Project** describes the advancements in Sanger sequencing used in the Human Genome Project.
+4. A primer on **next-generation sequencing** demonstrates how the new high-throughput sequencing methods make sequencing affordable for single research groups.
+5. The concept of sequencing facilities is introduced by example of the **National Genomics Infrastructure Sweden**.
+6. **Sequencing platforms**: Discusses various sequencing platforms and technologies used since Sanger sequencing.
+    - Illumina (Solexa) sequencing
+    - PacBio HiFi Sequencing
+    - Oxford Nanopore sequencing
+7. **Sequencing data handling**: Covers the handling and quality control of sequencing data.
+    - Quality control: Good data vs. Poor data
+    - Common bioinformatic analyses: Assembly, alignment and quasi-mapping.
+    - Data pipelines and workflow managers
+8. **Sequencing applications**: Explores various applications of sequencing in characterizing genetic (mal)function, exploring the environment, and elucidating evolutionary processes.
+    - Gene expression / Transcriptomics (RNA-seq, CAGE-seq)
+    - Gene regulation / Epigenetics (DNA-Methylation, Histone modifications)
+    - Gene alterations (Hereditary diseases, cancer biology)
+    - Genome assemblies of other species (biodiversity)
+    - Metagenomics and environmental DNA
+    - Pathogen surveillance (antibiotic resistance, epidemics)
+    - Ancient genomes
+    - Population genomics
+    - Genome assemblies of other species (biodiversity)
 
 ## License
 
