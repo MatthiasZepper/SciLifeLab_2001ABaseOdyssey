@@ -35,11 +35,11 @@
 
 \usepackage{xspace}
 \newcommand{\themename}{\textbf{\textsc{scilifelab}}\xspace}
-\newcommand{\credit}[1]{{\vspace{\fill} \par \raggedleft \scriptsize \mdseries \color{mDarkBrown} #1 \par}}
-\newcommand{\creditdark}[1]{{\vspace{\fill} \par \raggedleft \scriptsize \mdseries \color{scMGray} #1 \par}}
+\newcommand{\credit}[1]{{\vskip0pt plus 1filll \par \raggedleft \scriptsize \mdseries \color{mDarkBrown} #1 \par}}
+\newcommand{\creditdark}[1]{{\vskip0pt plus 1filll \par \raggedleft \scriptsize \mdseries \color{scMGray} #1 \par}}
 \newcommand{\creditdarknofill}[1]{{\par \raggedleft \scriptsize \mdseries \color{scMGray} #1 \par}}
-\newcommand{\creditleft}[1]{{\vspace{\fill} \par \raggedright \scriptsize \mdseries \color{mDarkBrown} #1 \par}}
-\newcommand{\creditdarkleft}[1]{{\vspace{\fill} \par \raggedright \scriptsize \mdseries \color{scMGray} #1 \par}}
+\newcommand{\creditleft}[1]{{\vskip0pt plus 1filll \par \raggedright \scriptsize \mdseries \color{mDarkBrown} #1 \par}}
+\newcommand{\creditdarkleft}[1]{{\vskip0pt plus 1filll \par \raggedright \scriptsize \mdseries \color{scMGray} #1 \par}}
 \newcommand{\creditdarkleftnofill}[1]{{\par \raggedright \scriptsize \mdseries \color{scMGray} #1 \par}}
 \newcommand{\citeme}[1]{{\xspace\color{scAqua} \scriptsize [\cite{#1}]}}
 \newcommand{\feature}[1]{{\color{scLime} \textbf{#1}}}
@@ -93,8 +93,8 @@
 		\item The genetic code is (almost) universal$^{[1]}$ 
 		\item It was resolved entirely using synthetic sequences.
 	\end{itemize}
-	 \par {\scriptsize [1] http://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=tgencodes}
-	\credit{https://www.nobelprize.org/prizes/medicine/1968/summary/ | User:Mouagip, Wikimedia Commons, PD}
+	 \par {\scriptsize [1] \url{http://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=tgencodes}}
+	\credit{\url{https://www.nobelprize.org/prizes/medicine/1968/summary} | User:Mouagip, Wikimedia Commons, PD}
 \end{frame}
 
 \begin{frame}{Encoded information of naturally occuring DNA unknown}
@@ -151,7 +151,7 @@
 			\includegraphics[width=0.8\textwidth]{./figures/sangergel.png}
 		\end{figure}
 	\end{columns}
- \creditleft{https://www.nobelprize.org/prizes/chemistry/1980/summary/}
+ \creditleft{\url{https://www.nobelprize.org/prizes/chemistry/1980/summary}}
 \end{frame}
 
 \begin{frame}{Advanced Sanger sequencing for the Human Genome Project}
@@ -274,6 +274,7 @@
 		\end{itemize}
 	\end{itemize}
        \column{0.5\textwidth}
+       \vspace*{2cm}
        \includegraphics[width=\textwidth]{./figures/scilifelab-map.png} 
     \end{columns}
 	\credit{\href{https://ngisweden.scilifelab.se}{https://ngisweden.scilifelab.se}}
@@ -392,6 +393,8 @@
 			\item Amplify for better signal
 			\item Linearize
 		\end{itemize}
+		\vspace{1cm} \par
+		\hspace{2em}\includegraphics[width=0.7\textwidth]{./figures/flow_cell_3b.jpg}
 	\end{columns}
 \creditdarkleft{Figure by Anja Mezger}
 \end{frame}
@@ -409,8 +412,10 @@
 			\item DNA is amplified (again)
 			\item Base integration yields a light signal (details vary among Illumina machines)
 			\item Sequence is derived from a time-series of images
+			\item NGS was developed from Sanger sequencing, but several key innovations were required.\citeme{Rodriguez2023}
 		\end{itemize}
 	\end{columns}
+ 	\creditdark{doi: 10.1038/s41587-023-01986-3} \par
 	\creditdarkleft{Figure by Anja Mezger}
 \end{frame}
 
@@ -525,8 +530,10 @@
 	\vspace{1em}
 \begin{columns}[T]
 	\column{\dimexpr\paperwidth-10pt}
+	\lstset{columns=fullflexible, basicstyle=\ttfamily,
+		backgroundcolor=\color{scLGray},xleftmargin=-2.5cm,frame=lr,framesep=2pt,framerule=0pt}
 		\begin{lstlisting}
-			@M00463:56:000000000-AD76D:1:1101:15189:1873 1:N:0:1
+			@SCILIFELAB:500:NGISTLM:1:1101:31620:1016 1:N:0
 			ATAAACACGGTCTTTTTCCAGGTCAAGCCGGACGGTACCGCCCTGTGGCCATCGAA
 			+
 			-86<<F9FB7FFFGGGGGGFACGFFDEFGGGEFE>FGGGDGFGGFGGCFG?FF7E@
@@ -540,6 +547,7 @@
 		\includegraphics[width=0.493\textwidth]{./figures/fastqc-good.png}
 		\includegraphics[width=0.493\textwidth]{./figures/fastqc-good2.png}
 	\end{columns}
+	\credit{\href{https://www.bioinformatics.babraham.ac.uk/projects/fastqc/}{FastQC} - A quality control tool for high throughput sequence data}
 \end{frame}
 
 \begin{frame}{Quality control: Poor data}
@@ -548,6 +556,7 @@
 		\includegraphics[width=0.493\textwidth]{./figures/fastqc-ugly.png}
 		\includegraphics[width=0.493\textwidth]{./figures/fastqc-ugly2.png}
 	\end{columns}
+	\credit{\href{https://www.bioinformatics.babraham.ac.uk/projects/fastqc/}{FastQC} - A quality control tool for high throughput sequence data}
 \end{frame}
 
 \begin{frame}{Common bioinformatic analyses}
@@ -804,6 +813,13 @@
 \end{frame}
 
 \begin{frame}{Spatial transcriptomics: Microscopy + single-cell sequencing}
+	\begin{figure}
+		\includegraphics[width=0.9\textwidth]{./figures/10x2.png}
+		\caption{Cell barcodes on microscopy slide}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Spatial transcriptomics: Microscopy + single-cell sequencing}
 	\begin{center}
 		\includegraphics[width=\textwidth]{./figures/hca.png} \\
 	\end{center}
@@ -954,7 +970,7 @@
 		\end{column}
 	\end{columns}
 	\credit{\citeme{Kostic2015}, Cell Host \& Microbe 17, 260–273 \\
-	\citeme{DavisRichardson2014}, Frontiers in Microbiology 5, 678}}
+	\citeme{DavisRichardson2014}, Frontiers in Microbiology 5, 678}
 \end{frame}
 
 \begin{frame}{Our gut microbiome is associated with...}
@@ -991,25 +1007,26 @@
 \begin{frame}{Prehistoric and ancient human genomes}
 \begin{columns}
 	\column{0.7\textwidth}
-\begin{center}
+\begin{figure}
 	\includegraphics[width=\textwidth]{./figures/paper-green.png} \par
-	\includegraphics[width=\textwidth]{./figures/paper-rasmussen.png}
-\end{center}
+	\includegraphics[width=\textwidth]{./figures/paper-krause.png}
+	\caption{Nobel laureate Svante Pääbo. Painted by Sixten Sandra Österberg for the Swedish National Portrait Gallery at Gripsholms slott. $\rightarrow$}
+\end{figure}
 	\column{0.3\textwidth}
-\begin{center}
-	\includegraphics[width=\textwidth]{./figures/pääbo.jpg}
-\end{center}
+\begin{figure}
+	\includegraphics[width=\textwidth]{./figures/paabo.jpg}
+\end{figure}
 \end{columns}
 \begin{columns}
 	\begin{column}{0.75\textwidth}
 		\url{http://genome-euro.ucsc.edu/Neandertal/}
-		\credit{\citeme{Green2010}, Science Vol. 328 No. 5979, 710-722  \linebreak \citeme{Rasmussen2010}, Nature 463, 757-762}
+		\creditleft{\citeme{Green2010}, Science Vol. 328, 710-722  \linebreak \citeme{Krause2010}, Nature Vol. 464, 894-897}
 	\end{column}
 	\begin{column}{0.25\textwidth}
-		\begin{center}
-			\includegraphics[width=\textwidth]{./figures/bestbefore.jpg}
-		\end{center}
-	\end{column}
+	\begin{center}
+		\includegraphics[width=\textwidth]{./figures/bestbefore.jpg}
+	\end{center}
+\end{column}
 \end{columns}
 \end{frame}
 
