@@ -667,6 +667,157 @@
 \end{exampleblock}
 \end{frame}
 
+\begin{frame}[standout]{}
+	\includegraphics[width=0.6\textwidth]{./figures/onedoesnotsimplyB2.jpg} \par
+	\feature{Sequencing application:} Combination of a library preparation method and a suitable sequencing technology 
+\end{frame}
+
+% % % % % % % % % % % % % % % % % % % % % % % 
+
+\section{Applications that characterize genetic (mal)function}
+
+% % % % % % % % % % % % % % % % % % % % % % % 
+
+\begin{frame}[fragile]{Epigenetics: Regulatory layers of the genome}
+	\begin{columns}
+		\column{0.5\textwidth}
+		
+		Cells of an organism contain the identical genome but utilize it in different ways.
+		
+		\column{0.5\textwidth}
+		\vspace{2em} \\ \hfill \includegraphics[height=0.8\textheight]{./figures/lesezeichen.png} 
+	\end{columns}
+\end{frame}
+
+\begin{frame}{ChIP-seq: \underline{Ch}romatin \underline{I}mmuno\underline{p}recipitation \underline{Seq}uencing}
+	\begin{minipage}{.46\linewidth}
+		\begin{center}
+			{\resizebox{\textwidth}{!}{\includegraphics{./figures/helixloophelix.png}}}
+		\end{center}
+	\end{minipage}
+	%\hspace{0.1\linewidth}
+	\begin{minipage}{.53\linewidth}
+		\begin{itemize}
+			\item Which genomic sites are bound by a particular protein?
+			\item Can detect transcription factor binding or epigenetic histone modifications.
+		\end{itemize}
+		\vspace{2em}
+		{\begin{flushleft}
+				\scriptsize $\leftarrow$ Two HLH-motifs (grey) of the  helix-loop-helix-transcription factor MyoD are bound to DNA.\end{flushleft}}
+	\end{minipage}%
+	\credit{\begin{flushleft}
+			http://www.ebi.ac.uk/pdbe-srv/view/entry/1mdy/summary \linebreak Rendering with \href{http://www.cgl.ucsf.edu/chimera/ }{UCSF Chimera} \end{flushleft}}
+\end{frame}
+
+\begin{frame}{ChIP-seq: \underline{Ch}romatin \underline{I}mmuno\underline{p}recipitation \underline{Seq}uencing}
+	\vspace{3em}
+	\begin{center}
+		\includegraphics[width=\textwidth]{./figures/ChIPseq1.png}
+	\end{center}
+	\begin{minipage}[t]{.49\linewidth}
+		\begin{enumerate}
+			\item {Isolation of target cells}
+		\end{enumerate}
+	\end{minipage}
+	\begin{minipage}[t]{.49\linewidth}
+		\begin{enumerate}
+			\stepcounter{enumi}
+			\item { \textit{Cross-linking:} Stably bind proteins to DNA with covalent bonds}
+		\end{enumerate}
+	\end{minipage}
+	\credit{Fig: own derivative work. Original: \href{http://commons.wikimedia.org/wiki/File:Chromatin\_immunoprecipitation\_sequencing.svg}{Jon Chui, Wikimedia Commons, CC-BY-SA 3.0}}
+\end{frame}
+
+\begin{frame}{ChIP-seq: \underline{Ch}romatin \underline{I}mmuno\underline{p}recipitation \underline{Seq}uencing}
+	\vspace{3em}
+	\begin{center}
+		\includegraphics[width=\textwidth]{./figures/ChIPseq2.png}
+	\end{center}
+	\begin{minipage}[t]{.49\linewidth}
+		\begin{enumerate}
+			\setcounter{enumi}{2}
+			\item \textit{Lysis + Sonication}: Lyse cells and fragment DNA by ultrasonic sound
+		\end{enumerate}
+	\end{minipage}
+	\begin{minipage}[t]{.49\linewidth}
+		\begin{enumerate}
+			\setcounter{enumi}{3}
+			\item \textit{Precipitation}: Recover target protein and bound DNA from lysate
+			% Antikörper gekoppelt an  Agarose, Sepharose or Magnetische Kügelchen
+		\end{enumerate}
+	\end{minipage}
+	\credit{Fig: own derivative work. Original: \href{http://commons.wikimedia.org/wiki/File:Chromatin\_immunoprecipitation\_sequencing.svg}{Jon Chui, Wikimedia Commons, CC-BY-SA 3.0}}
+\end{frame}
+
+\begin{frame}{ChIP-seq: \underline{Ch}romatin \underline{I}mmuno\underline{p}recipitation \underline{Seq}uencing}
+	\begin{enumerate}
+		\setcounter{enumi}{4}
+		\item Decrosslink and recover formerly bound DNA
+		\item Sequence DNA
+		\item Alignment on the reference genome
+	\end{enumerate}
+	\begin{center}
+		\includegraphics[width=\textwidth]{./figures/igvpeaks.png}
+	\end{center}
+	\begin{enumerate}
+		\setcounter{enumi}{7}
+		\item Subtract signals from negative control (IgG-control)
+		\item Peak detection and assignment to genes
+	\end{enumerate}
+	\credit{Screenshot \href{ http://www.broadinstitute.org/igv/}{Integrative Genomics Viewer (IGV)}}
+\end{frame}
+
+\begin{frame}{Peaks of different applications: Histone ChIP-seq, RNA-seq,  CAGE-seq}
+	\begin{columns}[T]
+		\column{\dimexpr\paperwidth-10pt}
+		\includegraphics[width=\textwidth]{./figures/peaks.png}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Big sequencing projects addressed basic research on gene regulation}
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{./figures/EncodeNatureGraphic.png}
+	\end{center}
+    \begin{itemize}
+    	\item \href{http://www.nature.com/encode/threads}{ENCODE Project: ENCyclopedia Of DNA Elements}
+    	\item \href{http://www.cell.com/consortium/IHEC}{Int. Human Epigenome Consortium}
+    \end{itemize}
+	\credit{Fig.: Darryl Leja (NHGRI), Ian Dunham (EBI), \url{http://encodeproject.org/ENCODE/aboutScaleup.html}}
+\end{frame}
+
+\begin{frame}{Most methods now on single-cell level}
+	\begin{columns}[T]
+		\column{\dimexpr\paperwidth-10pt}
+		\begin{figure}
+			\includegraphics[width=0.24\textwidth]{./figures/single-cell-B-oil.png}
+			\includegraphics[width=0.24\textwidth]{./figures/single-cell-B-oil2.png}
+			\includegraphics[width=0.24\textwidth]{./figures/single-cell-B-oil3.png}
+			\includegraphics[width=0.24\textwidth]{./figures/single-cell-B-oil4.png}
+			\caption{Artificial DNA barcode tags allow to determine cell of origin}
+		\end{figure}
+	\end{columns}
+	\begin{figure}
+		\includegraphics[width=0.9\textwidth]{./figures/single-cell4.png}
+		\caption{Dimensionality reduction methods (UMAP, t-SNE) separate cell-types}
+	\end{figure}
+	\credit{Figures by Anja Mezger}
+\end{frame}
+
+\begin{frame}{Spatial transcriptomics: Microscopy + single-cell sequencing}
+	\begin{center}
+		\includegraphics[width=\textwidth]{./figures/hca.png} \\
+	\end{center}
+	\url{https://www.humancellatlas.org}
+	\credit{Wang et al., Jul 2018, Science 361(6400)}
+\end{frame}
+
+\begin{frame}{SciLifeLab is one of the birthplaces of spatial transcriptomics}
+	\begin{center}
+		\includegraphics[width=\textwidth]{./figures/visium10x.png} \\
+	\end{center}
+	\url{https://www.spatialresearch.org}
+\end{frame}
+
 \begin{frame}[standout]{Milestones in DNA sequencing history}
 	\vspace*{-1.1cm}
 	\begin{center}
