@@ -557,7 +557,7 @@
 			\includegraphics[width=\textwidth]{figures/phixgen.png}
 		\end{figure}
 		\column{0.65\textwidth}
-		\vspace{2cm}
+		\vspace{1cm}
 		\begin{itemize}
 			\item \feature{pairwise) Alignment:} \par Find the exact origin of a short fragment in
 			a long reference.
@@ -588,16 +588,30 @@
 	\end{exampleblock}	
 \end{frame}
 
-\begin{frame}{Analyses as if we are back to today}
+\begin{frame}{Analyses as if we are back today}
 	\begin{columns}[T]
-		\column{\dimexpr\paperwidth-10pt}
-		\includegraphics[width=0.493\textwidth]{./figures/fastqc-good.png}
-		\includegraphics[width=0.493\textwidth]{./figures/fastqc-good2.png}
+	  \column{0.35\textwidth}
+		\begin{figure}
+			\includegraphics[width=\textwidth]{figures/sarek_workflow.png}
+		\end{figure}
+		\column{0.7\textwidth}
+		\includegraphics[width=0.493\textwidth]{./additional_graphics/nfcore.png}
+		\includegraphics[width=0.493\textwidth]{./additional_graphics/anvio.png}
+		\begin{itemize}
+			\item Data pipelines combine sequential steps.
+			\item Workflow managers execute pipelines and scale analyses to many samples.
+			\item Collaborative communities for workflow development help you to get started:
+			\begin{itemize}
+				\item \url{https://nf-co.re}
+				\item \url{https://anvio.org}
+			\end{itemize} 
+		\end{itemize}
 	\end{columns}
 \end{frame}
 
 \begin{frame}{Weblinks}
 	\begin{itemize}
+		\item Own lecture on NGS data analysis\linebreak \url{https://github.com/MatthiasZepper/Lecture-OmicsDataAnlysis}
 		\item Course Materials on sequencing data science \linebreak \url{http://data-science-sequencing.github.io}
 		\item DNA Sequencing Coursera class slides \linebreak \url{https://github.com/BenLangmead/ads1-slides}
 		\item Genome Browser (Easy access to selected genomes) \linebreak \url{http://genome-euro.ucsc.edu}
@@ -606,6 +620,52 @@
 	\end{itemize}
 \end{frame}
 
+
+
+
+% % % % % % % % % % % % % % % % % % % % % % % 
+
+\section{Sequencing applications}
+
+% % % % % % % % % % % % % % % % % % % % % % % 
+
+\begin{frame}{We are surrounded by genetic information}
+	\begin{columns}[T]
+		\column{\dimexpr\paperwidth-10pt}
+		\includegraphics[width=\textwidth]{./figures/WellcomeCollectionGenome.jpg}
+	\end{columns}
+\credit{Library of the Human Genome, Wellcome Collection. Photo by Ben Gilbert and Thomas Farnetti}
+\end{frame}
+
+\begin{frame}{We are surrounded by genetic information: Many applications}
+	\begin{columns}[T]
+		\column{\dimexpr\paperwidth-10pt}
+		\includegraphics[width=\textwidth]{./figures/WellcomeCollectionGenomePapers.png}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Not a finite list, but let's tidy up}
+	\begin{exampleblock}{Applications that characterize genetic (mal)function}
+		\begin{itemize}
+			\item Gene expression / Transcriptomics (RNA-seq, CAGE-seq)
+			\item Gene regulation / Epigenetics (DNA-Methylation, Histone modifications)
+			\item Gene alterations (Hereditary diseases, cancer biology)
+		\end{itemize}
+	\end{exampleblock}
+	\begin{exampleblock}{Applications that explore what is around us}
+		\begin{itemize}
+			\item Genome assemblies of other species (biodiversity)
+			\item Metagenomics (environmental DNA)
+			\item Pathogen surveillance (antibiotic resistance, epidemics)
+		\end{itemize}
+	\end{exampleblock}
+	\begin{exampleblock}{Applications to elucidate evolutionary processes}
+	\begin{itemize}
+		\item Ancient genomes
+		\item Population genomics
+	\end{itemize}
+\end{exampleblock}
+\end{frame}
 
 \begin{frame}[standout]{Milestones in DNA sequencing history}
 	\vspace*{-1.1cm}
@@ -618,11 +678,10 @@
 
 % % % % % % % % % % % % % % % % % % % % % % % 
 
-\section{Sequencing applications}
+\section{References}
 
 % % % % % % % % % % % % % % % % % % % % % % % 
 
-\section{References}
 \begin{frame}[allowframebreaks]{References}
 \begingroup
 \renewcommand*{\bibfont}{\footnotesize} 
