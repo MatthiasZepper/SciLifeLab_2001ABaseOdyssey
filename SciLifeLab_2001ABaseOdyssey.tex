@@ -51,16 +51,14 @@
 
 \title{2001: A Base Odyssey}
 \subtitle{The era of genomics and massive parallel sequencing}
-\date{February 24, 2025}
+\date{February 23, 2026}
 \author{Matthias Zepper, PhD}
-\institute{NGI Stockholm\par \href{https://ngisweden.scilifelab.se}{https://ngisweden.scilifelab.se}}
+\institute{National Genomics Infrastructure,  Stockholm\par \href{https://ngisweden.scilifelab.se}{https://ngisweden.scilifelab.se}}
 \titlegraphic{\hfill\includegraphics[height=1cm]{./additional_graphics/SciLifeLab_Logotype_Green_POS.png}}
 
 \begin{document}
-
-\maketitle
-
-\begin{frame}{2001: Draft assemblies of the human genome are published}
+	
+\begin{frame}{25 years ago: Public draft assemblies of the human genome}
 	\begin{figure}
 		\includegraphics[width=0.8\textwidth]{figures/humangenomeproject.png}
 		\caption{The private company Celera\citeme{Venter2001} and the International Human Genome Sequencing Consortium\citeme{Lander2001} both publish a draft sequence of the euchromatic portion of the human genome.}
@@ -77,6 +75,8 @@
 	{\small	Stanley Kubrick's \emph{2001- A Space Odyssey} premieres  2 April 1968}
 
 \end{frame}
+
+\maketitle
 
 \begin{frame}{1968: Nobel prize for the interpretation of the genetic code}
 	\begin{columns}[T,onlytextwidth]
@@ -106,9 +106,8 @@
 		\column{0.7\textwidth}
 		\vspace{3em}
 		\begin{itemize}
-			\item Peptides could be sequenced since the 
-			1950s (Sanger method, Edman degradation).
 			\item Sequencing of DNA was one of the most urgent, unresolved problems in the early 1970s.
+			\item Peptides could be sequenced since the 1950s (Sanger method, Edman degradation).
 			\item Frederick Sanger (Nobel laureate for sequencing Insulin 1958) started working with DNA. 
 		\end{itemize}
 	\end{columns}
@@ -121,15 +120,16 @@
 			\includegraphics[width=\textwidth]{./figures/sangersequencing.png}
 		\end{figure}
 		\column{0.65\textwidth}
+		\vspace{1cm}
+		\includegraphics[width=\textwidth]{./figures/sangerpaper.png}
+		\centering{\citeme{Sanger1977}}
+		\vspace{0.5cm}
 		\begin{itemize}
 			\item DNA fragments could be separated by size.
 			\item Sanger's method creates sequence-derived length patterns.
-			\item It relies on radioactive labeling and in-vitro amplification of DNA.
+			\item It relies on radioactive labelling and in-vitro amplification of DNA.
 		\end{itemize}
-		\begin{figure}
-			\includegraphics[width=\textwidth]{./figures/sangerpaper.png}
-			\caption{\citeme{Sanger1977}}
-		\end{figure}
+	   \alert{\hspace{1cm}$\rightarrow$ Sequencing by synthesis}
 	\end{columns}
 	\credit{$\leftarrow$ Fig.5.40, Löffler: Biochemie und Pathobiochemie 7th Ed.}
 \end{frame}
@@ -141,12 +141,13 @@
 			\includegraphics[width=\textwidth]{./figures/nobel-sanger.png}
 		\end{figure}
 		\column{0.5\textwidth}
+		\vspace{1cm}
 		\begin{itemize}
 			\item Ample DNA input needed\par {\scriptsize PCR was introduced in 1989}
 			\item Four reactions per sequence
 			\item Read length $\sim$ 200bp
 		\end{itemize}
-		\vspace{0.2cm}
+		\vspace{0.5cm}
 		\begin{figure}
 			\includegraphics[width=0.8\textwidth]{./figures/sangergel.png}
 		\end{figure}
@@ -230,66 +231,21 @@
 	\end{columns}
 \end{frame}
 
-% % % % % % % % % % % % % % % % % % % % % % % 
-
-\section{National Genomics Infrastructure Sweden}
-
-% % % % % % % % % % % % % % % % % % % % % % % 
-
-\begin{frame}{DNA sequencing facilities provide sequencing capacity}
-	\begin{center}
-	\hspace*{-1cm}
-	\includegraphics[height=0.2\textheight]{./additional_graphics/NGI-logo.png}
-	\end{center}
+\begin{frame}{\textit{Flow cells} instead of plates: Massive parallel sequencing}
+	\begin{columns}[T]
+		\column{\dimexpr\paperwidth-10pt}
+		\begin{figure}
+			\includegraphics[width=0.24\textwidth]{./figures/flow_cell_1.jpg}
+			\includegraphics[width=0.24\textwidth]{./figures/flow_cell_2.jpg}
+			\includegraphics[width=0.24\textwidth]{./figures/flow_cell_3.jpg}
+			\includegraphics[width=0.24\textwidth]{./figures/flow_cell_4.jpg}
+			\caption{Various Illumina flow cells}
+		\end{figure}
+	\end{columns}
 	\begin{itemize}
-		\item DNA sequencing of paramount importance for life science.
-		\item 2013: National Genomics Infrastructure Sweden is founded.
-		\item Our mission is to offer a state-of-the-art infrastructure available to researchers all over Sweden.
-     \end{itemize}
-\end{frame}
-
-\begin{frame}{Users of the National Genomics Infrastructure Sweden}
-	\begin{center}
-		\hspace*{-1cm}
-		\includegraphics[height=0.7\textheight]{./figures/ngi-users-2024.png}
-	\end{center}
-	\credit{\href{https://ngisweden.scilifelab.se/resources/ngi-stockholm-status/}{https://ngisweden.scilifelab.se/resources/ngi-stockholm-status/}}
-\end{frame}
-
-\begin{frame}{National Genomics Infrastructure Sweden}
-  \begin{columns}[T]
-     \column{0.6\textwidth}
-	\begin{center}
-		\hspace*{-1cm}
-		\includegraphics[height=0.2\textheight]{./additional_graphics/NGI-logo.png}
-	\end{center}
-	\begin{itemize}
-		\item NGI is a sequencing facility for \emph{research projects} 
-		\item Part of the Genomics Platform at SciLifeLab
-		\item Distributed in 3 nodes:
-		\begin{itemize}
-			\item SNP\&SEQ Technology Platform, Uppsala
-			\item Uppsala Genome Center
-			\item NGI Stockholm + Eukaryotic Single Cell Genomics (ESCG), Solna 
-		\end{itemize}
+		\item Illumina's platform produces 2x 150bp reads from a fragment.\linebreak\feature{$\rightarrow$ short-read sequencing}
+		\item Instead of 6912 fragments like with Sanger, Illumina machines can sequence Millions to Billions in parallel \feature{$\rightarrow$ massive-parallel sequencing}
 	\end{itemize}
-       \column{0.5\textwidth}
-       \vspace*{2cm}
-       \includegraphics[width=\textwidth]{./figures/scilifelab-map.png} 
-    \end{columns}
-	\credit{\href{https://ngisweden.scilifelab.se}{https://ngisweden.scilifelab.se}}
-\end{frame}
-
-\begin{frame}{NGI-S employs various sequencing technologies}
-	\begin{center}
-		\includegraphics[width=0.7\textwidth]{./figures/ngi-choi-flowcell.jpg} \\
-		\hspace*{-1cm}
-		\includegraphics[width=1.2\textwidth]{./figures/ngis-throughput-2024.png}
-	\end{center}
-	\begin{itemize}
-		\item In 2024, NGI Stockholm sequenced on average 1200 Gbp/day
-	\end{itemize}
-	\credit{\href{https://ngisweden.scilifelab.se/resources/ngi-stockholm-status/}{https://ngisweden.scilifelab.se/resources/ngi-stockholm-status/}}
 \end{frame}
 
 % % % % % % % % % % % % % % % % % % % % % % % 
@@ -298,57 +254,13 @@
 
 % % % % % % % % % % % % % % % % % % % % % % % 
 
-\begin{frame}{Sequencing platforms / technologies since Sanger}
-	%\metroset{block=fill}
-	\begin{exampleblock}{Next generation sequencing}
-		\begin{itemize}
-			\item Roche 454 sequencing (Pyrosequencing)
-			\item Ion semiconductor sequencing
-			\item \textbf{Illumina (Solexa) sequencing}
-			\item \textbf{PacBio HiFi Sequencing}
-		\end{itemize}
-	\end{exampleblock}
-	\begin{alertblock}{Third generation sequencing}
-		\begin{itemize}
-			\item \textbf{Oxford Nanopore sequencing}
-			\item \textbf{Element Biosciences Avidite Sequencing}
-			\item Ultima Genomics UG 100 Sequencing
-			\item MGI DNBSEQ Technology
-			\item Singular Genomics G4X
-		\end{itemize}
-	\end{alertblock}
-\credit{Platforms in \textbf{bold} are in use at the National Genomics Infrastructure}
-\end{frame}
-
-\begin{frame}{Sequencing platforms / technologies since Sanger}
-	%\metroset{block=fill}
-	\begin{exampleblock}{Sequencing by synthesis}
-		\begin{itemize}
-			\item Roche 454 sequencing (Pyrosequencing)
-			\item Ion semiconductor sequencing
-			\item \textbf{Illumina (Solexa) sequencing}
-			\item \textbf{PacBio HiFi Sequencing}
-			\item \textbf{Element Biosciences Avidite Sequencing}
-			\item Ultima Genomics UG 100 Sequencing
-			\item MGI DNBSEQ Technology
-			\item Singular Genomics G4X
-		\end{itemize}
-	\end{exampleblock}
-	\begin{alertblock}{Direct DNA/RNA sequencing}
-		\begin{itemize}
-			\item \textbf{Oxford Nanopore sequencing}
-		\end{itemize}
-	\end{alertblock}
-\credit{Platforms in \textbf{bold} are in use at the National Genomics Infrastructure}
-\end{frame}
-
 \begin{frame}{Illumina sequencing is \emph{the} NGS sequencing platform}
 	\begin{center}
 		\includegraphics[width=0.7\textwidth]{./figures/ngi-choi-novaseqxplus.jpg} \\
 		\hspace*{-1cm}
-		\includegraphics[width=1.2\textwidth]{./figures/ngis-throughput-2024-illumina.png}
+		\includegraphics[width=1.2\textwidth]{./figures/ngis-throughput-2025-illumina.png}
 	\end{center}
-\creditleft{Illumina's sequencing by synthesis technology is NGI's bread-and-butter platform}
+\creditleft{Illumina's sequencing by synthesis technology is NGI Stockholm's bread-and-butter platform (Output in Gbp)}
 \end{frame}
 
 \begin{frame}[standout]{Preparation for sequencing (in the lab)}
@@ -437,32 +349,61 @@
 	\end{columns}
 \end{frame}
 
-\begin{frame}{\textit{Flow cells} instead of plates: Massive parallel sequencing}
-	\begin{columns}[T]
-		\column{\dimexpr\paperwidth-10pt}
-	\begin{figure}
-		\includegraphics[width=0.24\textwidth]{./figures/flow_cell_1.jpg}
-		\includegraphics[width=0.24\textwidth]{./figures/flow_cell_2.jpg}
-		\includegraphics[width=0.24\textwidth]{./figures/flow_cell_3.jpg}
-		\includegraphics[width=0.24\textwidth]{./figures/flow_cell_4.jpg}
-		\caption{Various Illumina flow cells}
-		\end{figure}
-	\end{columns}
-	\begin{itemize}
-		\item Illumina's platform produces 2x 150bp reads from a fragment.\linebreak\feature{$\rightarrow$ short-read sequencing}
-		\item Instead of 6912 fragments like with Sanger, Illumina machines can sequence Millions to Billions in parallel \feature{$\rightarrow$ massive-parallel sequencing}
-	\end{itemize}
-\end{frame}
-
 \begin{frame}{PacBio: Single-molecule sequencing by synthesis}
 	\begin{columns}[T]
 		\column{\dimexpr\paperwidth-10pt}
 		\includegraphics[width=\textwidth]{./figures/pacbio.png}
 	\end{columns}
-		\begin{enumerate}
-			\item PacBio can generate longer reads than Illumina.
-			\item Circular libraries, fragment is sequenced repeatedly.
-		\end{enumerate}
+	\begin{enumerate}
+		\item PacBio can generate longer reads than Illumina.
+		\item Circular libraries, fragment is sequenced repeatedly.
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{Sequencing platforms / technologies since Sanger}
+	%\metroset{block=fill}
+	\begin{exampleblock}{Next generation sequencing}
+		\begin{itemize}
+			\item Roche 454 sequencing (Pyrosequencing)
+			\item Ion semiconductor sequencing
+			\item \textbf{Illumina (Solexa) sequencing}
+			\item \textbf{PacBio HiFi Sequencing}
+		\end{itemize}
+	\end{exampleblock}
+	\begin{alertblock}{Third generation sequencing}
+		\begin{itemize}
+			\item \textbf{Oxford Nanopore sequencing}
+			\item \textbf{Element Biosciences Avidite Sequencing}
+			\item Ultima Genomics UG 100 Sequencing
+			\item MGI DNBSEQ Technology
+			\item Singular Genomics G4X
+			\item Roche Axelios (Sequencing by expansion)
+		\end{itemize}
+	\end{alertblock}
+	\credit{Platforms in \textbf{bold} are in use at the National Genomics Infrastructure}
+\end{frame}
+
+\begin{frame}{Sequencing platforms / technologies since Sanger}
+	%\metroset{block=fill}
+	\begin{exampleblock}{Sequencing by synthesis}
+		\begin{itemize}
+			\item Roche 454 sequencing (Pyrosequencing)
+			\item Ion semiconductor sequencing
+			\item \textbf{Illumina (Solexa) sequencing}
+			\item \textbf{PacBio HiFi Sequencing}
+			\item \textbf{Element Biosciences Avidite Sequencing}
+			\item Ultima Genomics UG 100 Sequencing
+			\item MGI DNBSEQ Technology
+			\item Singular Genomics G4X
+		\end{itemize}
+	\end{exampleblock}
+	\begin{alertblock}{Pore-based sequencing}
+		\begin{itemize}
+			\item \textbf{Oxford Nanopore sequencing}
+			\item Roche Axelios (SBX, sequencing by expansion)
+		\end{itemize}
+	\end{alertblock}
+	\credit{Platforms in \textbf{bold} are in use at the National Genomics Infrastructure}
 \end{frame}
 
 \begin{frame}{Oxford Nanopore: Sequencing by electric conductivity}
@@ -518,7 +459,7 @@
 % % % % % % % % % % % % % % % % % % % % % % % 
 
 \begin{frame}[fragile]{Sequencing result: Terabytes of data in FastQ-format}
-	\feature{A single read:}
+	\feature{A single read in FastQ format:}
 	\begin{enumerate}
 		\item Read ID
 		\item DNA-sequence
@@ -541,24 +482,6 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}{Quality control: Good data}
-	\begin{columns}[T]
-		\column{\dimexpr\paperwidth-10pt}
-		\includegraphics[width=0.493\textwidth]{./figures/fastqc-good.png}
-		\includegraphics[width=0.493\textwidth]{./figures/fastqc-good2.png}
-	\end{columns}
-	\credit{\href{https://www.bioinformatics.babraham.ac.uk/projects/fastqc/}{FastQC} - A quality control tool for high throughput sequence data}
-\end{frame}
-
-\begin{frame}{Quality control: Poor data}
-	\begin{columns}[T]
-		\column{\dimexpr\paperwidth-10pt}
-		\includegraphics[width=0.493\textwidth]{./figures/fastqc-ugly.png}
-		\includegraphics[width=0.493\textwidth]{./figures/fastqc-ugly2.png}
-	\end{columns}
-	\credit{\href{https://www.bioinformatics.babraham.ac.uk/projects/fastqc/}{FastQC} - A quality control tool for high throughput sequence data}
-\end{frame}
-
 \begin{frame}{Common bioinformatic analyses}
 	\begin{columns}[T]
 	\column{0.5\textwidth}
@@ -577,7 +500,7 @@
 	\end{columns}
 \end{frame}
 
-\begin{frame}[fragile]{Analyses as if we were back in the sixties}
+\begin{frame}[fragile]{Bioinformatic advances enabled shotgun sequencing by Celera Genomics}
 	
 	\begin{exampleblock}{De novo assembly of \textit{contigs} (fault-tolerant)}
 		\hspace{2.3em}\framebox[1.1\width]{\small nswer, my friend} \hspace{2em}\framebox[1.1\width]{owin' in the wind. The ans} \par
@@ -597,7 +520,7 @@
 	\end{exampleblock}	
 \end{frame}
 
-\begin{frame}{Analyses as if we are back today}
+\begin{frame}{Scaling and standardizing analyses with data pipelines}
 	\begin{columns}[T]
 	\column{0.35\textwidth}
 		\begin{figure}
@@ -618,7 +541,7 @@
 	\end{columns}
 \end{frame}
 
-\begin{frame}{Weblinks}
+\begin{frame}{Weblinks in case you would like to know more}
 	\begin{itemize}
 		\item Own lecture on NGS data analysis\linebreak \url{https://github.com/MatthiasZepper/Lecture-OmicsDataAnlysis}
 		\item Course Materials on sequencing data science \linebreak \url{http://data-science-sequencing.github.io}
@@ -658,7 +581,7 @@
 		\begin{itemize}
 			\item Gene expression / Transcriptomics (RNA-seq, CAGE-seq)
 			\item Gene regulation / Epigenetics (DNA-Methylation, Histone modifications)
-			\item Gene alterations (Hereditary diseases, cancer biology)
+			\item Gene alterations (Hereditary diseases, cancer biology, exposomics)
 		\end{itemize}
 	\end{exampleblock}
 	\begin{exampleblock}{Applications that explore what is around us}
@@ -945,7 +868,7 @@
 	\url{https://gemmell-lab.otago.ac.nz}
 \end{frame}
 
-\begin{frame}{What is on and within us: Human Microbiome Project}
+\begin{frame}{Human Microbiome Project: What is on and within us?}
 	\begin{columns}
 		\column{\dimexpr\paperwidth-10pt}
 		\begin{center}
@@ -1030,7 +953,7 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}{Ancient genomes shed light on evolutionary developments}
+\begin{frame}{Ancient DNA/RNA sheds light on evolutionary developments}
 \begin{columns}
 	\begin{column}{0.65\textwidth}
 		\begin{center}
@@ -1054,7 +977,7 @@
 	\end{center}\end{column}
 	\begin{column}{0.5\textwidth}
 		\vspace{3cm} 
-		\credit{\citeme{Valk2021}, Nature 591, pages 265–269}
+		\credit{\citeme{Valk2021}, Nature 591, pages 265–269 \\ \citeme{MarmolSanchez2026},  Cell. 189(1):52-69}
 	\end{column}
 \end{columns}
 \end{frame}
@@ -1128,6 +1051,62 @@
 		\item [Q4/2030]: Remaining 1.65 million genomes in the last phase.
 	\end{description}
 	\url{https://www.earthbiogenome.org}
+\end{frame}
+
+% % % % % % % % % % % % % % % % % % % % % % % 
+
+\section{National Genomics Infrastructure Sweden}
+
+% % % % % % % % % % % % % % % % % % % % % % % 
+
+\begin{frame}{DNA sequencing facilities provide sequencing capacity}
+	\begin{center}
+		\hspace*{-1cm}
+		\includegraphics[height=0.2\textheight]{./additional_graphics/NGI-logo.png}
+	\end{center}
+	\begin{itemize}
+		\item DNA sequencing of paramount importance for life science.
+		\item 2013: National Genomics Infrastructure Sweden is founded.
+		\item Our mission is to offer a state-of-the-art infrastructure available to researchers all over Sweden.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Users of the National Genomics Infrastructure Sweden}
+	\begin{center}
+		\hspace*{-1cm}
+		\includegraphics[height=0.7\textheight]{./figures/ngi-users-2024.png}
+	\end{center}
+	\credit{\href{https://ngisweden.scilifelab.se/resources/ngi-stockholm-status/}{https://ngisweden.scilifelab.se/resources/ngi-stockholm-status/}}
+\end{frame}
+
+\begin{frame}{National Genomics Infrastructure Sweden}
+	\begin{columns}[T]
+		\column{0.6\textwidth}
+		\begin{center}
+			\hspace*{-1cm}
+			\includegraphics[height=0.2\textheight]{./additional_graphics/NGI-logo.png}
+		\end{center}
+		\begin{itemize}
+			\item NGI is a sequencing facility for \emph{research projects} 
+			\item Part of the Genomics Platform at SciLifeLab
+		\end{itemize}
+		\column{0.5\textwidth}
+		\vspace*{2cm}
+		\includegraphics[width=\textwidth]{./figures/scilifelab-map.png} 
+	\end{columns}
+	\credit{\href{https://ngisweden.scilifelab.se}{https://ngisweden.scilifelab.se}}
+\end{frame}
+
+\begin{frame}{NGI-S employs various sequencing technologies}
+	\begin{center}
+		\includegraphics[width=0.7\textwidth]{./figures/ngi-choi-flowcell.jpg} \\
+		\hspace*{-1cm}
+		\includegraphics[width=1.2\textwidth]{./figures/ngis-throughput-2024.png}
+	\end{center}
+	\begin{itemize}
+		\item In 2024, NGI Stockholm sequenced on average 1200 Gbp/day
+	\end{itemize}
+	\credit{\href{https://ngisweden.scilifelab.se/resources/ngi-stockholm-status/}{https://ngisweden.scilifelab.se/resources/ngi-stockholm-status/}}
 \end{frame}
 
 % % % % % % % % % % % % % % % % % % % % % % % 
