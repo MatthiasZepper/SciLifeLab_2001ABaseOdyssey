@@ -1,18 +1,9 @@
-\frametitle{Analyses as if we were back in the sixties}
-
-	\begin{exampleblock}{De novo assembly of \textit{contigs} (fault-tolerant)}
-		\hspace{2.3em}\framebox[1.1\width]{\small nswer, my friend} \hspace{2em}\framebox[1.1\width]{owin' in the wind. The ans} \par
-		\hspace{1.35em}\framebox[1.1\width]{\small e a{\color{orange}mb}er my fr} \hfill \textbf{ Technical read error / mutation}	\par
-		\hspace{5.85em}\framebox[1.1\width]{\small y friend is blowin' } \hspace{3.5em}\framebox[1.1\width]{ \small The answer is blowin' in}  \par
-		\hspace{5em}\framebox[1.1\width]{\small  my friend, is blow} \hspace{2em}\framebox[1.1\width]{\small e wind. The answe}  \par
-		\hspace{1.15em}\framebox[1.1\width]{\small e answer, my fr} \hspace{4.7em}\framebox[1.1\width]{\small in the wind. The answer is blowin'} \par
-	\end{exampleblock}
-	
-	\framebox{\small The answer, my friend, is blowin' in the wind. The answer is blowin' in the wind.}
-	
-	\begin{exampleblock}{Alignment (fault-tolerant)}
-		\hspace{5em}\framebox[1.1\width]{\small my {\color{orange}v}riend} \hfill \textbf{Technical read error/ mutation} \par
-		\framebox[1.1\width]{\small The{\color{orange}eeeeeeeee} answ{\color{orange}*}end} \hfill \textbf{Indel} \par
-		\hspace{2em}\framebox[1.1\width]{\small answer} \hfill $\longleftrightarrow$ \hfill
-		\framebox[1.1\width]{\small answer} \hspace{0.7em} \textbf{Multimapper} \par
-	\end{exampleblock}	
+\frametitle{Epigenetics: Regulatory layers of the genome}
+\begin{columns}
+		\column{0.5\textwidth}
+		
+		Cells of an organism contain the identical genome but utilize it in different ways.
+		
+		\column{0.5\textwidth}
+		\vspace{2em} \\ \hfill \includegraphics[height=0.8\textheight]{./figures/lesezeichen.png}
+	\end{columns}
