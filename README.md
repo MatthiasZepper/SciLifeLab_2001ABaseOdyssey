@@ -7,7 +7,7 @@
 <img src="./figures/ngi-choi-flowcell.jpg"  width=60% alt="Draft assemblies of the human genome"/>
 </p>
 
-This repository contains the slides, literature, and figures for the talk "2001: A Base Odyssey" about the era of genomics and massive parallel sequencing. It was delivered on February 24, 2025, by [Matthias Zepper](https://www.linkedin.com/in/matthias-zepper-05b752212/) at [SciLifeLab](https://www.scilifelab.se) in Stockholm.
+This repository contains the slides, literature, and figures for the talk "2001: A Base Odyssey" about the era of genomics and massive parallel sequencing. It was delivered on February 23, 2026, by [Matthias Zepper](https://www.linkedin.com/in/matthias-zepper-05b752212/) at [SciLifeLab](https://www.scilifelab.se) in Stockholm.
 
 The presentation explores the history and advancements in DNA sequencing, covering various next-generation sequencing (NGS) technologies, the data analysis and sequencing applications.
 
@@ -28,29 +28,23 @@ To compile the slides, ensure you have LaTeX with Beamer installed. You will nee
 
 ## Summary of Presentation Content
 
-1. **2001: Draft assemblies of the human genome are published**: Discusses the publication of the draft sequence of the human genome. With a reference to Stanley Kubrick's "2001: A Space Odyssey.", this can be considered as **the overture to the genomic era**. Jumping back to the production year of the film, the **1968: Nobel prize for the interpretation of the genetic code** is mentioned.
-2. At that time **encoded information of naturally occurring DNA was unknown**. Discusses the challenges of sequencing DNA in the early 1970s and explains the development of the **chain-termination sequencing method** by Frederick Sanger.
-3. Coming full circle, **advanced Sanger sequencing for the Human Genome Project** describes the advancements in Sanger sequencing used in the Human Genome Project.
-4. A primer on **next-generation sequencing** demonstrates how the new high-throughput sequencing methods make sequencing affordable for single research groups.
-5. The concept of sequencing facilities is introduced by example of the **National Genomics Infrastructure Sweden**.
-6. **Sequencing platforms**: Discusses various sequencing platforms and technologies used since Sanger sequencing.
-    - Illumina (Solexa) sequencing
-    - PacBio HiFi Sequencing
-    - Oxford Nanopore sequencing
-7. **Sequencing data handling**: Covers the handling and quality control of sequencing data.
-    - Quality control: Good data vs. Poor data
-    - Common bioinformatic analyses: Assembly, alignment and quasi-mapping.
-    - Data pipelines and workflow managers
-8. **Sequencing applications**: Explores various applications of sequencing in characterizing genetic (mal)function, exploring the environment, and elucidating evolutionary processes.
-    - Gene expression / Transcriptomics (RNA-seq, CAGE-seq)
-    - Gene regulation / Epigenetics (DNA-Methylation, Histone modifications)
-    - Gene alterations (Hereditary diseases, cancer biology)
-    - Infectious Disease Monitoring
-    - Metagenomics and environmental DNA
-    - Pathogen surveillance (antibiotic resistance, epidemics)
-    - Ancient genomes
-    - Population genomics
-    - Genome assemblies of other species (biodiversity)
+1. **2001: Draft assemblies of the human genome are published**: Introduces the publication of the public and private draft human genomes as the overture to the genomic era, framed with a nod to Kubrick's *2001: A Space Odyssey*.
+2. **From genetic code to DNA sequencing (1968-1980)**: Reviews the 1968 Nobel prize for decoding the genetic code, the early challenge that natural DNA sequence information was still unknown, and Frederick Sanger's 1977 chain-termination method with its 1980 Nobel recognition.
+3. **Advanced Sanger sequencing for the Human Genome Project**: Shows how fluorescent labeling, capillary electrophoresis, automation, and parallelization enabled large-scale sequencing in the HGP era.
+4. **Rise of next-generation sequencing (NGS)**: Explains the transition from Sanger to high-throughput massive-parallel sequencing, flow cells, and the dramatic drop in sequencing costs.
+5. **Sequencing platforms and technologies since Sanger**: Compares major platform classes and principles.
+    - Illumina short-read sequencing by synthesis
+    - PacBio long-read single-molecule sequencing by synthesis
+    - Oxford Nanopore pore-based electrical signal sequencing
+6. **Sequencing data handling and analysis**: Covers sequencing output (FastQ), core bioinformatic strategies, and scalable processing.
+    - Pairwise alignment, quasi-mapping, and de novo assembly
+    - Data pipelines and workflow managers (for example nf-core)
+7. **Sequencing applications - from function to environment to evolution**: Organizes applications into three major domains.
+    - Characterizing genetic (mal)function (epigenetics, transcriptomics, cancer genomics, single-cell and spatial methods)
+    - Exploring what is around us (infectious disease monitoring, metagenomics, microbiome research)
+    - Elucidating evolutionary processes (ancient DNA, population genomics, biodiversity and agrigenomics)
+8. **Milestones and outlook**: Revisits key milestones in sequencing history and highlights where the field is currently heading.
+9. **National Genomics Infrastructure (NGI) Sweden**: Concludes with NGI's role as SciLifeLab's sequencing infrastructure, including platform capacity and support for research projects in Sweden.
 
 ## License
 
