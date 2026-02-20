@@ -742,19 +742,17 @@
 	\end{figure}
 \end{frame}
 
-\begin{frame}{Spatial transcriptomics: Microscopy + single-cell sequencing}
-	\begin{center}
-		\includegraphics[width=\textwidth]{./figures/hca.png} \\
-	\end{center}
-	\url{https://www.humancellatlas.org}
-	\credit{\citeme{Wang2018}, Science 361(6400)}
-\end{frame}
-
 \begin{frame}{SciLifeLab is one of the birthplaces of spatial transcriptomics}
 	\begin{center}
-		\includegraphics[width=\textwidth]{./figures/visium10x.png} \\
+		\includegraphics[width=0.8\textwidth]{./figures/visium10x.png} \\
+		\url{https://www.spatialresearch.org} \hspace{1cm}
+		\url{https://hdca-sweden.scilifelab.se}
 	\end{center}
-	\url{https://www.spatialresearch.org}
+	\begin{columns}[T]
+	\column{\dimexpr\paperwidth-10pt}
+	\includegraphics[width=\linewidth]{./additional_graphics/HCA-DV-logo-screen-RGB-colour-MEDIUM.jpg} \\
+	\credit{\citeme{Staahl2016} Science Jul 1;353(6294):78-82 \\ \citeme{Lazar2025}, Nat Genet. 2025 Nov;57(11):2756-2771}
+   \end{columns}
 \end{frame}
 
 \begin{frame}{Cancer cell genomes (Recurrent mutations and aberrations)}
@@ -868,6 +866,26 @@
 	\url{https://gemmell-lab.otago.ac.nz}
 \end{frame}
 
+\begin{frame}{eDNA metagenomics: What is around us in the nature?}
+	\begin{columns}[T]
+		\column{0.35\textwidth}
+		\begin{figure}
+			\includegraphics[height=0.75\textheight]{figures/tara.jpg}
+			\caption{Schooner \textit{Tara} in Stockholm, 2023}
+		\end{figure}
+		\column{0.7\textwidth}
+			\begin{figure}
+				\includegraphics[width=0.893\textwidth]{./figures/i2b_lab.png}
+				 \caption{DNA clean lab onboard the Norwegian research vessel RV Kronprins Haakon to sample sediment cores}
+			\end{figure}
+			\begin{itemize}
+				\item \href{https://storymaps.arcgis.com/stories/eab2690b97574f9295f198d3085f8837}{$\uparrow$ i2B Arctic Ocean Expedition 2025}
+				\item \href{https://fondationtaraocean.org/en/expedition/}{$\leftarrow$ Tara Océans Expeditions}
+				\item  \href{https://www.embl.org/about/info/trec/}{TREC Traversing European Coastlines}
+			\end{itemize} 
+	\end{columns}
+\end{frame}
+
 \begin{frame}{Human Microbiome Project: What is on and within us?}
 	\begin{columns}
 		\column{\dimexpr\paperwidth-10pt}
@@ -933,7 +951,7 @@
 \begin{figure}
 	\includegraphics[width=\textwidth]{./figures/paper-green.png} \par
 	\includegraphics[width=\textwidth]{./figures/paper-krause.png}
-	\caption{Nobel laureate Svante Pääbo. Painted by Sixten Sandra Österberg for the Swedish National Portrait Gallery at Gripsholms slott. $\rightarrow$}
+	\caption{2022 Nobel laureate Svante Pääbo. Painted by Sixten Sandra Österberg for the Swedish National Portrait Gallery at Gripsholms slott. $\rightarrow$}
 \end{figure}
 	\column{0.3\textwidth}
 \begin{figure}
@@ -1002,7 +1020,7 @@
 	\end{column}
 	\begin{column}{0.7\textwidth}
 		\begin{center}
-			\credit{\citeme{Dussex2021}, Cell Genomics Volume 1, Issue 1\linebreak \citeme{Liu2021}, Volume 184, Issue 19, Pages 4874-4885.e16}
+			\credit{\citeme{Dussex2021}, Cell Genomics Volume 1, Issue 1\linebreak \citeme{Liu2021}, Cell Volume 184, Issue 19, Pages 4874-4885.e16}
 		\end{center}
 	\end{column}
 \end{columns}    
@@ -1053,6 +1071,15 @@
 	\url{https://www.earthbiogenome.org}
 \end{frame}
 
+\begin{frame}[standout]{Milestones in DNA sequencing history}
+	\vspace*{-1.1cm}
+	\begin{center}
+		\hspace*{-1.1cm}
+		\includegraphics[width=1.2\textwidth]{./figures/timeline.png}
+	\end{center}
+	\creditdark{Figure by Anja Mezger}
+\end{frame}
+
 % % % % % % % % % % % % % % % % % % % % % % % 
 
 \section{National Genomics Infrastructure Sweden}
@@ -1071,17 +1098,10 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Users of the National Genomics Infrastructure Sweden}
-	\begin{center}
-		\hspace*{-1cm}
-		\includegraphics[height=0.7\textheight]{./figures/ngi-users-2024.png}
-	\end{center}
-	\credit{\href{https://ngisweden.scilifelab.se/resources/ngi-stockholm-status/}{https://ngisweden.scilifelab.se/resources/ngi-stockholm-status/}}
-\end{frame}
-
 \begin{frame}{National Genomics Infrastructure Sweden}
 	\begin{columns}[T]
 		\column{0.6\textwidth}
+		  \vspace*{1cm}
 		\begin{center}
 			\hspace*{-1cm}
 			\includegraphics[height=0.2\textheight]{./additional_graphics/NGI-logo.png}
@@ -1089,9 +1109,11 @@
 		\begin{itemize}
 			\item NGI is a sequencing facility for \emph{research projects} 
 			\item Part of the Genomics Platform at SciLifeLab
+			\item Labs in Uppsala and Stockholm
+			\item \href{https://ngisweden.scilifelab.se/applications/ngi-openlab/}{NGI Open Lab in Uppsala}
 		\end{itemize}
 		\column{0.5\textwidth}
-		\vspace*{2cm}
+		\vspace*{1.2cm}
 		\includegraphics[width=\textwidth]{./figures/scilifelab-map.png} 
 	\end{columns}
 	\credit{\href{https://ngisweden.scilifelab.se}{https://ngisweden.scilifelab.se}}
@@ -1100,28 +1122,12 @@
 \begin{frame}{NGI-S employs various sequencing technologies}
 	\begin{center}
 		\includegraphics[width=0.7\textwidth]{./figures/ngi-choi-flowcell.jpg} \\
-		\hspace*{-1cm}
-		\includegraphics[width=1.2\textwidth]{./figures/ngis-throughput-2024.png}
+		\includegraphics[height=0.5\textheight]{./figures/ngis-throughput-2025.png}
 	\end{center}
 	\begin{itemize}
-		\item In 2024, NGI Stockholm sequenced on average 1200 Gbp/day
+		\item In 2025, NGI Stockholm sequenced almost 1600 Gbp/day on average
 	\end{itemize}
 	\credit{\href{https://ngisweden.scilifelab.se/resources/ngi-stockholm-status/}{https://ngisweden.scilifelab.se/resources/ngi-stockholm-status/}}
-\end{frame}
-
-% % % % % % % % % % % % % % % % % % % % % % % 
-
-\section{Summary}
-
-% % % % % % % % % % % % % % % % % % % % % % % 
-
-\begin{frame}[standout]{Milestones in DNA sequencing history}
-	\vspace*{-1.1cm}
-	\begin{center}
-		\hspace*{-1.1cm}
-		\includegraphics[width=1.2\textwidth]{./figures/timeline.png}
-	\end{center}
-	\creditdark{Figure by Anja Mezger}
 \end{frame}
 
 \begin{frame}[standout]{NGI has you covered for your research}
